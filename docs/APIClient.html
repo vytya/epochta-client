@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>APIClient - Documentation</title>
+    <title>apiClient - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -22,15 +22,15 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="APIClient.html">APIClient</a></li><li><a href="ClientError.html">ClientError</a></li></ul><h3>Namespaces</h3><ul><li><a href="APIResponseObjects.html">APIResponseObjects</a></li></ul><h3>Interfaces</h3><ul><li><a href="APIMethods.html">APIMethods</a><ul class='methods'><li data-type='method'><a href="APIMethods.html#addAddressbook">addAddressbook</a></li><li data-type='method'><a href="APIMethods.html#delAddressbook">delAddressbook</a></li><li data-type='method'><a href="APIMethods.html#getAddressbook">getAddressbook</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#clientInstance">clientInstance</a></li><li><a href="global.html#concatArgs">concatArgs</a></li><li><a href="global.html#getMd5Hash">getMd5Hash</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="apiClient.html">apiClient</a><ul class='methods'><li data-type='method'><a href="apiClient.html#.addAddressbook">addAddressbook</a></li><li data-type='method'><a href="apiClient.html#.delAddressbook">delAddressbook</a></li><li data-type='method'><a href="apiClient.html#.getAddressbook">getAddressbook</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api.html">api</a></li><li><a href="module-config.html">config</a></li><li><a href="module-epochta-client.html">epochta-client</a><ul class='methods'><li data-type='method'><a href="module-epochta-client.html#~client">client</a></li></ul></li><li><a href="module-handler.html">handler</a></li><li><a href="module-helpers.html">helpers</a></li></ul><h3>Externals</h3><ul><li><a href="external-request.html">request</a></li></ul><h3><a href="global.html">Global</a></h3>
 </nav>
 
 <div id="main">
+    
+    <h1 class="page-title">apiClient</h1>
+    
 
-    <h1 class="page-title">APIClient</h1>
-
-
-
+    
 
 
 
@@ -38,78 +38,70 @@
 <section>
 
 <header>
-
+    
         <h2>
-        APIClient
+        apiClient
         </h2>
-
-            <div class="class-description"><p>Singleton. Instance could be instantiated without <code>new</code> operator. Implements all API methods
-described in <a href="APIMethods.html">APIMethods</a> interface.</p></div>
-
-
+        
+            <div class="class-description"><p>API methods provider. Singleton object.</p></div>
+        
+    
 </header>
 
 <article>
     <div class="container-overview">
+    
+        
 
-
-
-
+    
     <h2>Constructor</h2>
+    
 
+    <h4 class="name" id="apiClient"><span class="type-signature"></span>new apiClient<span class="signature">()</span><span class="type-signature"></span></h4>
 
-    <h4 class="name" id="APIClient"><span class="type-signature"></span>new APIClient<span class="signature">(keys)</span><span class="type-signature"></span></h4>
-
-
+    
 
 
 
 
 <dl class="details">
 
-
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line17">line 17</a>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line13">line 13</a>
     </li></ul></dd>
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-    <dt class="implements">Implements:</dt>
-    <dd class="implements"><ul>
+    
 
-            <li><a href="APIMethods.html">APIMethods</a></li>
+    
 
-    </ul></dd>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 </dl>
 
 
@@ -126,51 +118,196 @@ described in <a href="APIMethods.html">APIMethods</a> interface.</p></div>
 
 
 
-    <h5>Parameters:</h5>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".addAddressbook"><span class="type-signature">(static) </span>addAddressbook<span class="signature">(name, userapp<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;number>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Creates new address book with provided name.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
 
 <table class="params">
     <thead>
     <tr>
-
+        
         <th>Name</th>
-
+        
 
         <th>Type</th>
 
+        
+        <th>Attributes</th>
+        
 
-
-
+        
 
         <th class="last">Description</th>
     </tr>
     </thead>
 
     <tbody>
-
+    
 
         <tr>
-
-                <td class="name"><code>keys</code></td>
-
+            
+                <td class="name"><code>name</code></td>
+            
 
             <td class="type">
+            
+                
+<span class="param-type">string</span>
 
 
-<span class="param-type"><a href="global.html#APIKeys">APIKeys</a></span>
-
-
-
+            
             </td>
 
+            
+                <td class="attributes">
+                
 
+                
 
+                
+                </td>
+            
 
+            
 
-            <td class="description last"><p>API keys provided by ePochta SMS service</p></td>
+            <td class="description last"><p>name of an address book</p></td>
         </tr>
 
+    
 
+        <tr>
+            
+                <td class="name"><code>userapp</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -187,10 +324,147 @@ described in <a href="APIMethods.html">APIMethods</a> interface.</p></div>
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>id of the created address book</p>
+</div>
 
 
 
-    </div>
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;number></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".delAddressbook"><span class="type-signature">(static) </span>delAddressbook<span class="signature">(id)</span><span class="type-signature"> &rarr; {Promise.&lt;number>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line29">line 29</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Deletes an address book by id.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>id of the address book to delete</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -205,10 +479,203 @@ described in <a href="APIMethods.html">APIMethods</a> interface.</p></div>
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>TODO: idk what it means</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;number></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getAddressbook"><span class="type-signature">(static) </span>getAddressbook<span class="signature">(id<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;(<a href="global.html#AddressBook">AddressBook</a>|Array.&lt;<a href="global.html#AddressBook">AddressBook</a>>|Error)>}</span></h4>
+
+    
 
 
 
 
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api.js.html">api.js</a>, <a href="api.js.html#line38">line 38</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Returns address book data.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>id of the address book to get data. If not provided, returns all address books data</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>address book/books data</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(<a href="global.html#AddressBook">AddressBook</a>|Array.&lt;<a href="global.html#AddressBook">AddressBook</a>>|Error)></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+    
+
+    
+
+    
 </article>
 
 </section>
@@ -221,11 +688,10 @@ described in <a href="APIMethods.html">APIMethods</a> interface.</p></div>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Mar 16 2017 15:08:42 GMT+0200 (EET) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Mar 15 2017 21:47:12 GMT+0200 (EET) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
 <script src="scripts/linenumber.js"></script>
 </body>
 </html>
-

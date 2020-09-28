@@ -1,6 +1,6 @@
 {
   "name": "epochta-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ePochta SMS API (v. 3.0) Client",
   "main": "lib/index.js",
   "scripts": {
